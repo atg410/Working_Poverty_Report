@@ -1,4 +1,10 @@
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(sf)
+library(dplyr)
+library(ggplot2)
+library(jsonlite)
+```
 ---
 title: "Programming for Economists"
 output:
@@ -7,9 +13,19 @@ output:
 date: "2025-06-14"
 ---
 When COVID-19 struck the global economic system, journalists, analysts, and company officials were quick to point out the significant effects this crisis had on unemployment numbers. Contextually referring specifically to the portion of the labor force that is willing and able to work but unable to find work. Headlines of articles addressing this topic compared the dramatic rise in unemployment to that of the Great Recession, whilst other, more down-to-earth tones could not help but to lament the jobs that would have been created without this intervention in the economy.
-However, whilst the unemployment levels are rightfully a concern to governments and policymakers, this concern should not undermine the attention given to other marginalized socioeconomic demographics. One such group are the working poor, people who are working, and thus a part of the productive workforce within society, and who simultaneously are below the poverty line. A report from Eurofund (the European Foundation for the improvement of Living and Working Conditions) on the working poor concludes that in the aftermath of the 2008-2009 Financial Crisis, unemployment was seen as a priority, whilst the working poor were not. 
-	Being a member of the working poor is associated with a range of negative consequences on the quality of life of an individual. The financial uncertainty and instability of being in such a situation brings with it heightened levels of stress, which in turn weakens a person's immune system throughout the long term. Furthermore these conditions  contribute to a higher vulnerability of mental health issues among members of the working poor. The ability to smooth economic shocks through insurance can lead to a reduction of stress, a mechanism of our current economic system that is not available to many of the working poor. In large-scale social surveys assessing the quality of life of the working poor, the group consistently reports significantly lower satisfaction relative to other socioeconomic groups. Additionally a higher percentage of respondents also indicated that they experience social seclusion. The working poor are by no means a small group; in 2017, this entailed 9.4% of those working in the EU and 6.1% in the Netherlands. 
-	Since the onset of the pandemic in 2020, many countries were forced into lockdown, this was accompanied by a sharp decline of economic activity which further exacerbated the already existing socio economic problems. If our society is to address the issue of the working poor in the future, which might include another pandemic, then we need to prepare policies that can help these people out. However, in order to begin policymaking in earnest the government, its municipalities and the relevant involved institutions need analyses of data on the working poor to be able to plan for both the long-term scenario and scenarios in which economic activity suddenly slows down. To that end this research report aims to conduct a data analysis of the working poor in the Netherlands. This report will assess the fluctuations of the quantities of working poor for the spatial variable of city sizes and for the temporal variable of the pre and post-COVID societies.
+
+
+However, whilst the unemployment levels are rightfully a concern to governments and policymakers, this concern should not undermine the attention given to other marginalized socioeconomic demographics. One such group are the working poor, people who are working, and thus a part of the productive workforce within society, and who simultaneously are below the poverty line. 
+A report from Eurofund (the European Foundation for the improvement of Living and Working Conditions) on the working poor concludes that in the aftermath of the 2008-2009 Financial Crisis, unemployment was seen as a priority, whilst the working poor were not. 
+
+
+	Being a member of the working poor is associated with a range of negative consequences on the quality of life of an individual. The financial uncertainty and instability of being in such a situation brings with it heightened levels of stress, which in turn weakens a person's immune system throughout the long term. 
+Furthermore these conditions  contribute to a higher vulnerability of mental health issues among members of the working poor. The ability to smooth economic shocks through insurance can lead to a reduction of stress, a mechanism of our current economic system that is not available to many of the working poor. In large-scale social surveys assessing the quality of life of the working poor, the group consistently reports significantly lower satisfaction relative to other socioeconomic groups. Additionally a higher percentage of respondents also indicated that they experience social seclusion. The working poor are by no means a small group; in 2017, this entailed 9.4% of those working in the EU and 6.1% in the Netherlands. 
+
+
+	Since the onset of the pandemic in 2020, many countries were forced into lockdown, this was accompanied by a sharp decline of economic activity which further exacerbated the already existing socio economic problems. If our society is to address the issue of the working poor in the future, which might include another pandemic, then we need to prepare policies that can help these people out. 
+However, in order to begin policymaking in earnest the government, its municipalities and the relevant involved institutions need analyses of data on the working poor to be able to plan for both the long-term scenario and scenarios in which economic activity suddenly slows down. To that end this research report aims to conduct a data analysis of the working poor in the Netherlands. 
+This report will assess the fluctuations of the quantities of working poor for the spatial variable of city sizes and for the temporal variable of the pre and post-COVID societies.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -281,4 +297,19 @@ ggplot(df_yearly_percentage, aes(x = Year, y = working_poor)) +
 
 
 ```
+Discussion of Findings:
+
+The findings of our analysis point to some significant trends regarding the working poor in the Netherlands. Through investigation of the relative proportion of working poor across time, between city types, and before and after the COVID-19 pandemic, we are able to paint a more developed picture of how poverty impacts those with employment — a population who tends to be overlooked in policy-making conversations.
+
+The most visible result is the evident pattern of distinction between large, medium, and small cities in terms of working poor proportion. From the boxplots we made, we noticed that large cities like Amsterdam, Rotterdam, and Utrecht all had higher rates of working poor compared to medium and small cities. This is probably for all sorts of reasons: living expenses are significantly higher in larger towns, accommodation is more expensive, and insecure work (e.g., short-term or part-time) is more common. Surprisingly, perhaps, smaller municipalities such as Hillegom and Hardinxveld-Giessendam had very low proportions of working poor, suggesting that this is less of a problem in rural or semi-rural areas. This supports the argument that place is a significant determinant of economic vulnerability even for those with jobs.
+
+When looking at temporal change, our line graphs showed a pattern of increase in both the number and percentage of working poor over the years covered, especially since 2020. Where one might have expected pandemic government assistance to mitigate some economic strain, our findings suggest otherwise — at least for poor working. One reason for this is that much of the employment that was sustained during COVID was low-paying or part-time employment, so people were still on the job but still below the poverty level. In addition, some of the economic impacts of COVID, such as inflation and reduced job security, may have still impacted workers in the subsequent years beyond the initial round of lockdowns.
+
+The examination of the event by comparing pre-COVID (2018–2019) and post-COVID (2022–2023) revealed some dramatic changes. In most major cities, we observed a slight rise in working poor percentages post-pandemic, but overall employment levels returned to equilibrium. This is particularly significant since it subverts the simplistic premise that economic recovery translates to everyone improving. Our evidence suggests that some employees may have cycled back into jobs that remained financially precarious — reaffirming a form of "recovery" that does not automatically equate to well-being.
+
+Geographically, choropleth maps assisted in making it even more apparent how unevenly the problem is distributed in the Netherlands. Certain municipalities simply had larger proportions of working poor, generating a sort of poverty "cluster" in some urbanized areas. It's worth noting that these correlations didn't entirely correspond with population density alone — i.e., there might be other structural considerations (e.g., local economic policy, housing prices, or the labor market) that are affecting these outcomes.
+
+It's also worth considering some weaknesses of our study. First, the information we had available covered only a few years, and excluded 2020–2021 entirely — years that would prove to be extremely valuable in examining the direct impacts of the pandemic. Second, while the "working poor" are operationalized across income and population data, it fails to account for such relevant variables as educational level, contract type, or number of dependents, each of which could influence one's budget. Finally, the "RegioS" codes were given by hand to city names, adding another source of imprecision to our spatial analysis.
+
+Regardless of these limitations, our findings are helpful for policymakers and researchers alike. They suggest that employment is no shield against poverty in the post-pandemic world. Our aim is that this report contributes to a broader conversation about what it means to be economically secure in the contemporary labor market — and inspires better policy that addresses poverty among people who do have jobs, not just those who do not.​​
 
