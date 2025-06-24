@@ -1,6 +1,6 @@
 # Working Poverty Report
 
-##Quantifying the Working Poor in the Netherlands
+Quantifying the Working Poor in the Netherlands
 This project was developed for the course Programming for Economists (VU, 2025) and focuses on analyzing the prevalence and patterns of the working poor in the Netherlands using public data from CBS (Statistics Netherlands). Our primary aim was to examine how the proportion of working poor individuals—those who are employed but live below the poverty line—varies across city sizes.
 
 🔍 Research Motivation
