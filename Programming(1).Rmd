@@ -1,6 +1,6 @@
 ---
 title: "Programming for Economists"
-author: "Alexander Tijburg.2673913., Martijn Lustig.2781885., Duco Mol .2833134., Andreea Muntean .2776874., Seerp van Roijen .2743665. and Ikhouane Imran .2860003.
+author - student numbers: "Alexander Tijburg - 2673913, Martijn Lustig - 2781885, Duco Mol - 2833134, Andreea Muntean - 2776874, Seerp van Roijen - 2743665, and Ikhouane Imran - 2860003.
 Tutorial_group: Late_Group2
 output: pdf_document
 date: "2025-06-14"
