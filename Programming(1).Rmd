@@ -6,7 +6,7 @@ output: pdf_document
 date: "2025-06-14"
 ---
 
-# Set-up your environment
+# Environment setup
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
