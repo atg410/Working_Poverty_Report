@@ -1,3 +1,4 @@
+Students: Alexander Tijburg, Martijn Lustig, Duco Mol, Andreea Muntean, Seerp van Roijen and Ikhouane Imran
 ---
 title: "Programming for Economists"
 author: "Studentnames and studentnumbers here"
