@@ -7,12 +7,12 @@ For this assignment we will be using public data from (...).
 This group assignment is part of the course **Programming for Economists (Eco 2025)**.
 
 ## 🧑‍🤝‍🧑 Group Members
-- Alex Tijburg (GitHub: @atg410)
-- Andreea Muntean (Github: )
-- Duco Mol (Github: )
-- Imran Ikhouane (Github: )
-- Martijn Lustig (Github: )
-- Seerp van Roijen (Github: )
+- Alex Tijburg
+- Andreea Muntean 
+- Duco Mol 
+- Imran Ikhouane 
+- Martijn Lustig 
+- Seerp van Roijen 
 - 
 - Tutorial group: [LateGroup2]  
 
