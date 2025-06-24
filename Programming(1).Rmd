@@ -38,6 +38,9 @@ Footnotes:
 5 Ridley, M., Rao, G., Schilbach, F., & Patel, V. (2020). Poverty, depression, and anxiety: Causal evidence and mechanisms. Science, 370(6522), eaay0214. https://doi.org/10.1126/science.aay0214 
 6 Eurofound. (2017). In-work poverty in the EU. Publications Office of the European Union, 27. https://doi.org/10.2806/65550 
 7 Eurostat. (2019). Living and working in Europe 2019: Statistical pocketbook. Publications Office of the European Union, 4. https://ec.europa.eu/eurostat/documents/3217494/10335481/KS-02-19-303-EN-N.pdf
+8 See Mandemakers, K. (2000). The Netherlands Historical Sample of the Netherlands (HSN). In P. Kelly Hall, R. McCaa, & G. Thorvaldsen (Eds.), Handbook of International Historical Microdata for Population Research, 157. Minnesota Population Center.
+9 Centraal Bureau voor de Statistiek. (2024). Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2024) [Data set]. CBS StatLine. https://opendata.cbs.nl/statline/portal.html?_catalog=CBS&_la=nl&tableId=86006NED&_theme=310
+
 
 ```{r}
 Laag_Inkomen <- read.csv("Lage Inkomens.csv", sep = ";")
