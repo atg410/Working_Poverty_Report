@@ -40,6 +40,8 @@ Footnotes:
 7 Eurostat. (2019). Living and working in Europe 2019: Statistical pocketbook. Publications Office of the European Union, 4. https://ec.europa.eu/eurostat/documents/3217494/10335481/KS-02-19-303-EN-N.pdf
 8 See Mandemakers, K. (2000). The Netherlands Historical Sample of the Netherlands (HSN). In P. Kelly Hall, R. McCaa, & G. Thorvaldsen (Eds.), Handbook of International Historical Microdata for Population Research, 157. Minnesota Population Center.
 9 Centraal Bureau voor de Statistiek. (2024). Laag en langdurig laag inkomen; huishoudenskenmerken, regio (indeling 2024) [Data set]. CBS StatLine. https://opendata.cbs.nl/statline/portal.html?_catalog=CBS&_la=nl&tableId=86006NED&_theme=310
+10 Centraal Bureau voor de Statistiek. (2024). Bevolking; herkomstland, geboorteland, leeftijd, regio, 1 januari [Data set]. CBS StatLine. https://opendata.cbs.nl/statline/portal.html?_catalog=CBS&_la=nl&tableId=85458NED&_theme=278
+
 
 
 ```{r}
